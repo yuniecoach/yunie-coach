@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>박윤정 YUNIE coach — 브레인 · 마인드 · 웰니스 통합코치</title>
+<meta name="description" content="뇌과학·색채심리(CPA)·아로마를 통합해 마음을 단단하게 세웁니다. 세 아이를 키운 코치엄마의 시선으로 전하는 기질육아와 스포츠 멘탈코칭." />
+<meta name="author" content="박윤정 (YUNIE coach)" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="박윤정 YUNIE coach — 브레인 · 마인드 · 웰니스 통합코치" />
+<meta property="og:description" content="뇌과학 · 색채심리 · 아로마를 통합해 마음을 단단하게 세웁니다." />
+<meta property="og:locale" content="ko_KR" />
+<meta name="theme-color" content="#FBF5EE" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23FBF5EE'/%3E%3Ctext x='32' y='45' font-size='38' font-family='serif' font-weight='700' text-anchor='middle' fill='%23D9603A'%3EY%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+<style>
+:root{
+  --bg:#FBF5EE;
+  --bg-deep:#F4EADF;
+  --card:#FFFFFF;
+  --ink:#2A2320;
+  --ink-soft:#6B5F58;
+  --line:rgba(42,35,32,.12);
+  --coral:#D9603A;
+  --coral-soft:#FBE4D8;
+  --clay:#B4795C;
+  --moss:#4E7A5E;
+  --moss-soft:#E4EDE6;
+  --shadow:0 1px 2px rgba(42,35,32,.04), 0 8px 28px -14px rgba(42,35,32,.22);
+  --radius:14px;
+  --maxw:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Pretendard Variable",Pretendard,"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  line-height:1.72;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+  word-break:keep-all;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+/* ---------- header ---------- */
+header{
+  position:sticky;top:0;z-index:40;
+  background:rgba(251,245,238,.86);
+  backdrop-filter:saturate(180%) blur(12px);
+  border-bottom:1px solid var(--line);
+}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:16px}
+.logo{display:flex;align-items:baseline;gap:8px;text-decoration:none;font-weight:700;letter-spacing:.04em}
+.logo b{font-family:"Noto Serif KR",serif;font-size:1.02rem}
+.logo i{font-style:normal;font-size:.72rem;letter-spacing:.16em;color:var(--coral);font-weight:600}
+nav a{margin-left:26px;text-decoration:none;font-size:.87rem;color:var(--ink-soft);white-space:nowrap}
+nav a:hover,nav a:focus-visible{color:var(--coral)}
+@media(max-width:900px){nav{display:none}}
+.nav-cta{
+  display:inline-block;padding:9px 16px;border-radius:999px;
+  background:var(--ink);color:var(--bg);text-decoration:none;
+  font-size:.82rem;font-weight:600;white-space:nowrap
+}
+.nav-cta:hover{background:var(--coral)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--coral);outline-offset:3px;border-radius:4px}
+
+/* ---------- shared ---------- */
+section{padding:88px 0;scroll-margin-top:70px}
+@media(max-width:720px){section{padding:64px 0}}
+.eyebrow{
+  display:flex;align-items:center;gap:9px;
+  font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--coral);font-weight:700;margin:0 0 14px
+}
+.eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--coral);flex:none}
+h2.sec{
+  font-family:"Noto Serif KR",serif;font-weight:700;
+  font-size:clamp(1.6rem,3.4vw,2.3rem);line-height:1.42;margin:0 0 16px;letter-spacing:-.01em
+}
+.lead{color:var(--ink-soft);font-size:1.02rem;max-width:62ch;margin:0}
+.rule{height:1px;background:var(--line);border:0;margin:0}
+
+/* ---------- hero ---------- */
+.hero{padding:76px 0 84px;position:relative;overflow:hidden}
+.hero::before{
+  content:"";position:absolute;inset:auto -180px -320px auto;
+  width:640px;height:640px;border-radius:50%;
+  background:radial-gradient(circle at 30% 30%, #FCE7D9, rgba(252,231,217,0) 68%);
+  z-index:0;pointer-events:none
+}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.25fr .85fr;gap:56px;align-items:center}
+@media(max-width:880px){.hero .wrap{grid-template-columns:1fr;gap:40px}.hero{padding:52px 0 64px}}
+.kicker{
+  display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap;
+  font-size:.78rem;font-weight:600;letter-spacing:.06em;color:var(--clay);
+  background:var(--coral-soft);padding:7px 14px;border-radius:999px;margin:0 0 22px
+}
+.hero h1{
+  font-family:"Noto Serif KR",serif;font-weight:700;
+  font-size:clamp(2.05rem,5.2vw,3.3rem);line-height:1.34;letter-spacing:-.02em;
+  margin:0 0 20px;position:relative
+}
+.hero h1 em{font-style:normal;color:var(--coral);position:relative;white-space:nowrap;display:inline-block}
+.hero h1 em::after{
+  content:"";position:absolute;left:-2px;right:-2px;bottom:.08em;height:.32em;
+  background:rgba(217,96,58,.16);border-radius:3px;z-index:-1
+}
+.hero p.sub{font-size:1.06rem;color:var(--ink-soft);margin:0;max-width:46ch}
+.namebar{
+  display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
+  margin:26px 0 14px;padding-top:22px;border-top:1px solid var(--line)
+}
+.namebar b{font-family:"Noto Serif KR",serif;font-size:1.32rem;letter-spacing:.04em}
+.namebar span{font-size:.8rem;letter-spacing:.18em;color:var(--clay);font-weight:600}
+.namebar small{font-size:.9rem;color:var(--ink-soft)}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:13px 24px;border-radius:999px;text-decoration:none;
+  font-weight:600;font-size:.94rem;transition:transform .16s ease,background .16s ease,border-color .16s ease
+}
+.btn-primary{background:var(--coral);color:#fff;box-shadow:0 10px 22px -12px rgba(217,96,58,.85)}
+.btn-primary:hover{background:#C2512D;transform:translateY(-1px)}
+.btn-ghost{border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--ink);transform:translateY(-1px)}
+
+.portrait{position:relative;justify-self:center;width:100%;max-width:330px;margin:0}
+.portrait::before{
+  content:"";position:absolute;inset:20px -16px 24px 20px;
+  border-radius:180px 180px var(--radius) var(--radius);
+  background:var(--coral-soft)
+}
+.portrait img{
+  position:relative;width:100%;aspect-ratio:3/3.7;object-fit:cover;object-position:50% 20%;
+  border-radius:180px 180px var(--radius) var(--radius);
+  filter:sepia(.26) saturate(1.08) contrast(1.02);
+  box-shadow:var(--shadow)
+}
+.portrait figcaption{
+  position:relative;margin-top:14px;text-align:center;
+  font-size:.76rem;letter-spacing:.2em;color:var(--clay);font-weight:700
+}
+
+/* ---------- stat strip ---------- */
+.strip{background:var(--bg-deep);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding-top:30px;padding-bottom:30px}
+@media(max-width:720px){.strip .wrap{grid-template-columns:repeat(2,1fr);gap:24px}}
+.stat{text-align:center}
+.stat b{display:block;font-family:"Noto Serif KR",serif;font-size:1.45rem;color:var(--coral);line-height:1.35}
+.stat span{font-size:.83rem;color:var(--ink-soft)}
+
+/* ---------- cards ---------- */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:38px}
+@media(max-width:880px){.grid-3{grid-template-columns:1fr}}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:28px 26px;box-shadow:var(--shadow)
+}
+.card .no{font-size:.73rem;letter-spacing:.16em;font-weight:700;color:var(--coral);margin-bottom:12px}
+.card h3{font-family:"Noto Serif KR",serif;font-size:1.13rem;margin:0 0 10px}
+.card p{margin:0;color:var(--ink-soft);font-size:.95rem}
+.card ul{margin:14px 0 0;padding-left:0;list-style:none}
+.card li{font-size:.86rem;color:var(--ink-soft);padding-left:15px;position:relative;margin-top:5px}
+.card li::before{content:"";position:absolute;left:0;top:.7em;width:5px;height:5px;border-radius:50%;background:var(--moss)}
+
+/* ---------- philosophy ---------- */
+.philosophy{background:var(--ink);color:#F6EFE7}
+.philosophy .eyebrow{color:#F0A183}
+.philosophy .eyebrow::before{background:#F0A183}
+.quote{
+  font-family:"Noto Serif KR",serif;font-weight:600;
+  font-size:clamp(1.35rem,3.2vw,2rem);line-height:1.6;margin:0 0 26px;letter-spacing:-.01em
+}
+.quote span{color:#F0A183}
+.philosophy p.body{color:rgba(246,239,231,.76);max-width:60ch;margin:0}
+.basis{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}
+.basis span{
+  border:1px solid rgba(246,239,231,.24);border-radius:999px;
+  padding:7px 15px;font-size:.82rem;color:rgba(246,239,231,.9)
+}
+
+/* ---------- lecture ---------- */
+.topics{margin-top:38px;display:grid;gap:14px}
+.topic{
+  background:var(--card);border:1px solid var(--line);border-left:3px solid var(--coral);
+  border-radius:4px var(--radius) var(--radius) 4px;padding:22px 26px;
+  display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start;
+  transition:transform .18s ease,border-left-color .18s ease
+}
+.topic:hover{transform:translateX(3px);border-left-color:var(--moss)}
+.topic b{font-family:"Noto Serif KR",serif;color:var(--coral);font-size:1rem;line-height:1.9}
+.topic h3{margin:0 0 6px;font-size:1.04rem;font-weight:600}
+.topic p{margin:0;font-size:.92rem;color:var(--ink-soft)}
+@media(max-width:520px){.topic{grid-template-columns:1fr;gap:6px;padding:20px}.topic b{line-height:1.4}}
+
+/* ---------- credentials ---------- */
+.creds{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:38px}
+@media(max-width:760px){.creds{grid-template-columns:1fr}}
+.cred{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px}
+.cred h3{margin:0 0 14px;font-size:.95rem;font-weight:700;color:var(--moss);display:flex;align-items:center;gap:8px}
+.cred h3::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--moss);flex:none}
+.cred ul{margin:0;padding:0;list-style:none}
+.cred li{font-size:.9rem;padding:7px 0;border-top:1px dashed var(--line)}
+.cred li:first-child{border-top:0}
+.cred li small{color:var(--ink-soft);font-size:.81rem}
+
+/* ---------- work ---------- */
+.works{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:38px}
+@media(max-width:760px){.works{grid-template-columns:1fr}}
+.work{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
+.tag{
+  display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.12em;
+  padding:4px 10px;border-radius:999px;margin-bottom:12px;
+  background:var(--moss-soft);color:var(--moss)
+}
+.tag.warm{background:var(--coral-soft);color:var(--clay)}
+.work h3{font-family:"Noto Serif KR",serif;font-size:1.09rem;margin:0 0 8px}
+.work p{margin:0;font-size:.93rem;color:var(--ink-soft)}
+
+/* ---------- timeline ---------- */
+.timeline{margin-top:38px;border-left:1px solid var(--line);padding-left:30px;display:grid;gap:28px}
+.tl{position:relative}
+.tl::before{
+  content:"";position:absolute;left:-35px;top:.62em;width:9px;height:9px;border-radius:50%;
+  background:var(--bg);border:2px solid var(--coral)
+}
+.tl b{display:block;font-size:.79rem;letter-spacing:.14em;color:var(--clay);font-weight:700;margin-bottom:4px}
+.tl h3{margin:0 0 4px;font-size:1.02rem;font-weight:600}
+.tl p{margin:0;font-size:.92rem;color:var(--ink-soft)}
+
+/* ---------- contact ---------- */
+.contact{background:var(--bg-deep);border-top:1px solid var(--line)}
+.contact .wrap{text-align:center}
+.contact h2{font-family:"Noto Serif KR",serif;font-size:clamp(1.5rem,3.4vw,2.15rem);margin:0 0 14px;line-height:1.48}
+.contact p{color:var(--ink-soft);margin:0 auto 30px;max-width:48ch}
+.links{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.link{
+  display:inline-flex;align-items:center;gap:9px;background:var(--card);
+  border:1px solid var(--line);border-radius:999px;padding:12px 22px;
+  text-decoration:none;font-size:.92rem;font-weight:600;transition:transform .16s ease,border-color .16s ease,color .16s ease
+}
+.link:hover{transform:translateY(-2px);border-color:var(--coral);color:var(--coral)}
+.link svg{width:17px;height:17px;flex:none}
+
+/* ---------- footer ---------- */
+footer{padding:34px 0;font-size:.84rem;color:var(--ink-soft)}
+footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
+.disclaimer{
+  margin-top:26px;padding:16px 18px;border:1px dashed var(--line);border-radius:10px;
+  font-size:.8rem;color:var(--ink-soft);background:var(--card)
+}
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top"><b>박윤정</b><i>YUNIE COACH</i></a>
+    <nav>
+      <a href="#about">소개</a>
+      <a href="#philosophy">코칭 철학</a>
+      <a href="#lecture">강의 주제</a>
+      <a href="#credentials">자격</a>
+      <a href="#work">활동</a>
+    </nav>
+    <a class="nav-cta" href="https://www.threads.com/@chanlinminlove" target="_blank" rel="noopener">문의하기</a>
+  </div>
+</header>
+
+<main id="top">
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <p class="kicker">브레인 · 마인드 · 웰니스 통합코치</p>
+      <h1>혼내기 전에,<br /><em>기질</em>부터 봐야 하는<br />이유가 있습니다</h1>
+      <p class="sub">뇌과학 · 색채심리 · 아로마를 하나로 엮어, 흔들리지 않는 마음을 설계합니다.</p>
+      <div class="namebar">
+        <b>박윤정</b><span>YUNIE</span>
+        <small>스포츠 멘탈코치 · CPA 컬러기질 분석가 · 뇌전문상담사</small>
+      </div>
+      <p class="sub" style="font-size:.95rem">세 아이를 키운 ‘코치엄마’의 시선으로, 일상에서 누구나 쓸 수 있는 마음 돌봄의 언어를 전합니다.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://www.threads.com/@chanlinminlove" target="_blank" rel="noopener">Threads DM으로 문의하기</a>
+        <a class="btn btn-ghost" href="#lecture">강의 주제 보기</a>
+      </div>
+    </div>
+    <figure class="portrait">
+      <img src="assets/yuni-portrait.webp" alt="멘탈코치 박윤정 프로필 사진" width="680" height="838" />
+      <figcaption>YUNIE COACH</figcaption>
+    </figure>
+  </div>
+</div>
+
+<div class="strip">
+  <div class="wrap">
+    <div class="stat"><b>3</b><span>아이를 키운 코치엄마</span></div>
+    <div class="stat"><b>4개 축</b><span>뇌과학 · 색채 · 아로마 · 스포츠</span></div>
+    <div class="stat"><b>초·중·고</b><span>엘리트 선수 멘탈코칭</span></div>
+    <div class="stat"><b>15+</b><span>보유 자격 및 인증</span></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <p class="eyebrow reveal">About</p>
+    <h2 class="sec reveal">사람의 행동에는<br />반드시 이유가 있습니다</h2>
+    <p class="lead reveal">훈육은 감정 싸움이 되기 쉽습니다. 하지만 행동 뒤에는 타고난 기질과, 지금 이 순간의 뇌 상태가 있습니다. 저는 그 둘을 각각 다른 눈으로 읽고, 겹쳐 보는 일을 합니다. 감이 아니라 근거로요.</p>
+
+    <div class="grid-3">
+      <div class="card reveal">
+        <div class="no">01 · COLOR</div>
+        <h3>색채심리 · CPA 기질 분석</h3>
+        <p>12색 기질로 ‘나는 어떤 사람인가’를 풀어냅니다. 평소의 성향을 데이터로 확인하고, 그 사람만의 사용설명서를 만듭니다.</p>
+        <ul><li>CPA 컬러기질전문상담사 1급</li><li>가족 · 관계 소통 해석</li></ul>
+      </div>
+      <div class="card reveal">
+        <div class="no">02 · BRAIN</div>
+        <h3>뇌과학 · 뉴로피드백</h3>
+        <p>뇌파는 ‘지금 이 순간의 상태’를 보여줍니다. 집중력과 긴장 조절의 원리를 일상에 적용하는 자기조절 습관으로 옮깁니다.</p>
+        <ul><li>뇌전문가 · 브레인PD</li><li>집중력 트레이닝 설계</li></ul>
+      </div>
+      <div class="card reveal">
+        <div class="no">03 · AROMA</div>
+        <h3>아로마 정서 케어</h3>
+        <p>스트레스와 불안을 다스리는 향의 과학. 누구나 오늘 저녁부터 따라 할 수 있는 생활 속 정서 케어로 이어집니다.</p>
+        <ul><li>NAHA Level 1 · 2</li><li>감정아로마 전문상담</li></ul>
+      </div>
+    </div>
+
+    <div class="disclaimer reveal">
+      기질과 뇌파 자료는 사람을 규정하는 라벨이 아니라, 이해를 돕는 참고 자료로만 사용합니다. 진단 · 치료를 대체하지 않습니다.
+    </div>
+  </div>
+</section>
+
+<hr class="rule" />
+
+<section id="philosophy" class="philosophy">
+  <div class="wrap">
+    <p class="eyebrow reveal">Philosophy</p>
+    <p class="quote reveal">“선수이기 이전에,<br /><span>한 사람으로 성장하도록</span> 돕는다”</p>
+    <p class="body reveal">장기적 발달 모델(LTAD)과 자기결정성 이론(SDT), 빙산 모델에 기반해 통제가 아닌 자율성과 정서를 지지합니다. 성적과 결과보다 ‘사람의 성장’을 먼저 바라보는 코칭을 지향합니다.</p>
+    <div class="basis reveal">
+      <span>LTAD 장기적 발달 모델</span>
+      <span>SDT 자기결정성 이론</span>
+      <span>빙산 모델</span>
+      <span>통제가 아닌 자율성</span>
+    </div>
+  </div>
+</section>
+
+<section id="lecture">
+  <div class="wrap">
+    <p class="eyebrow reveal">Lecture</p>
+    <h2 class="sec reveal">시민강좌 · 워크숍 주제</h2>
+    <p class="lead reveal">지자체 시민강좌, 학부모 교육, 기업 · 기관 워크숍 형태로 진행합니다. 강의와 향기 공예를 함께하는 체험형 구성도 가능합니다.</p>
+
+    <div class="topics">
+      <article class="topic reveal">
+        <b>01</b>
+        <div>
+          <h3>색으로 보는 나와 우리 가족 — CPA 색채심리 이야기</h3>
+          <p>12색 기질로 풀어보는 ‘나는 어떤 사람인가’. 가족 · 이웃과의 관계를 색으로 이해하는 시간.</p>
+        </div>
+      </article>
+      <article class="topic reveal">
+        <b>02</b>
+        <div>
+          <h3>향기로 마음을 돌보다 — 일상 속 아로마 정서 케어</h3>
+          <p>스트레스 · 불안을 다스리는 향기의 과학. 누구나 따라 할 수 있는 생활 속 아로마 활용법.</p>
+        </div>
+      </article>
+      <article class="topic reveal">
+        <b>03</b>
+        <div>
+          <h3>뇌과학으로 배우는 마음 다스리기</h3>
+          <p>집중력과 긴장 조절의 원리를 쉽게 풀어내는 뇌과학 입문. 일상에 적용하는 자기조절 습관.</p>
+        </div>
+      </article>
+      <article class="topic reveal">
+        <b>04</b>
+        <div>
+          <h3>흔들려도 괜찮아 — 나를 다시 세우는 마음의 힘</h3>
+          <p>‘무가치함의 심리학’을 바탕으로 한 자존감 회복 강의. 강의와 향기 공예를 함께하는 체험형 구성 가능.</p>
+        </div>
+      </article>
+      <article class="topic reveal">
+        <b>05</b>
+        <div>
+          <h3>코치엄마의 마음 돌봄 — 부모와 아이가 함께 자라는 법</h3>
+          <p>통제가 아닌 자율과 정서를 지지하는 소통법. 양육에 지친 부모를 위한 회복의 메시지.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<hr class="rule" />
+
+<section id="credentials">
+  <div class="wrap">
+    <p class="eyebrow reveal">Credentials</p>
+    <h2 class="sec reveal">자격 및 인증</h2>
+    <p class="lead reveal">색채심리 · 스포츠 멘탈 · 뇌과학 · 아로마 네 갈래를 각각 정식 과정으로 밟아, 하나의 통합 리포트로 엮습니다.</p>
+
+    <div class="creds">
+      <div class="cred reveal">
+        <h3>색채심리 · 기질 분석</h3>
+        <ul>
+          <li>CPA 컬러기질전문상담사 1급 · 2급 <small>2025, 국제힐링라이프코칭협회</small></li>
+          <li>컬러코디네이터 <small>2009, 일본 문부과학성</small></li>
+        </ul>
+      </div>
+      <div class="cred reveal">
+        <h3>스포츠 멘탈 코칭</h3>
+        <ul>
+          <li>스포츠멘탈코칭전문가 1급 · 2급 <small>2026, 한국멘탈코칭센터</small></li>
+          <li>스포츠심리상담사 1급 <small>2025, 한국자격검정평가진흥원</small></li>
+        </ul>
+      </div>
+      <div class="cred reveal">
+        <h3>뇌과학 · 뉴로피드백</h3>
+        <ul>
+          <li>뇌전문가 자격증 <small>2026, 한국정신과학연구소</small></li>
+          <li>브레인PD <small>2026, 한국정신과학연구소</small></li>
+        </ul>
+      </div>
+      <div class="cred reveal">
+        <h3>아로마테라피</h3>
+        <ul>
+          <li>NAHA Level 1 · 2 <small>2026, 미국 홀리스틱아로마테라피협회</small></li>
+          <li>감정아로마전문상담사 <small>2025, 국제임상아로마협회</small></li>
+          <li>천연아로마전문가 <small>2025, 국제임상아로마협회</small></li>
+        </ul>
+      </div>
+      <div class="cred reveal">
+        <h3>주얼리 · 디자인</h3>
+        <ul>
+          <li>귀금속제작기능사 <small>2008, 일본 후생노동성</small></li>
+          <li>주얼리코디네이터 <small>2008, 일본주얼리협회</small></li>
+        </ul>
+      </div>
+      <div class="cred reveal">
+        <h3>그 밖의 상담 · 교육</h3>
+        <ul>
+          <li>색채심리상담사 · 타로심리상담사</li>
+          <li>부모교육지도자</li>
+          <li>아동학대 예방교육 이수 <small>공공부문 신고의무자 과정</small></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule" />
+
+<section id="work">
+  <div class="wrap">
+    <p class="eyebrow reveal">Work</p>
+    <h2 class="sec reveal">지금 하고 있는 일</h2>
+
+    <div class="works">
+      <article class="work reveal">
+        <span class="tag">PROGRAM</span>
+        <h3>YUNIE coach 운영</h3>
+        <p>유소년 선수와 학부모를 대상으로 멘탈 코칭과 통합 프로그램을 기획 · 운영합니다.</p>
+      </article>
+      <article class="work reveal">
+        <span class="tag warm">PRODUCT</span>
+        <h3>NeuroCPA 통합 리포트</h3>
+        <p>뇌파 데이터와 CPA 컬러 DNA, 아로마 처방을 한 장으로 엮는 웹 리포트를 직접 만들었습니다. ‘지금 상태 × 평소 성향’을 대조해 읽습니다.</p>
+      </article>
+      <article class="work reveal">
+        <span class="tag warm">LECTURE</span>
+        <h3>‘무가치함의 심리학’ 2시간 통합 강의</h3>
+        <p>자존감 회복을 주제로 한 워크숍. 향기팔찌 · 세라믹가든 공예를 연계한 체험형 구성으로 진행합니다.</p>
+      </article>
+      <article class="work reveal">
+        <span class="tag">PUBLIC</span>
+        <h3>지자체 지원사업 · 기관 워크숍</h3>
+        <p>여성노동복지센터, 백화점 문화센터 등에서 부모교육과 시민강좌 프로그램을 기획하고 운영합니다.</p>
+      </article>
+      <article class="work reveal">
+        <span class="tag">WRITING</span>
+        <h3>블로그 ‘아이의 마음을 읽는 엄마’</h3>
+        <p>스포츠 멘탈 · 양육 · 뇌과학을 주제로 정기 콘텐츠를 씁니다.</p>
+      </article>
+      <article class="work reveal">
+        <span class="tag warm">CONTENT</span>
+        <h3>카드뉴스 · 웹툰 ‘유니툰’</h3>
+        <p>Threads와 인스타그램에서 기질육아 이야기를 매일 나눕니다. 어려운 개념을 짧은 그림으로 옮깁니다.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<hr class="rule" />
+
+<section id="story">
+  <div class="wrap">
+    <p class="eyebrow reveal">Story</p>
+    <h2 class="sec reveal">보석을 세공하다가,<br />마음을 세공하는 사람이 되었습니다</h2>
+
+    <div class="timeline">
+      <div class="tl reveal">
+        <b>2005</b>
+        <h3>숙명여자대학교 일본학 전공 졸업</h3>
+        <p>다른 언어로 사람을 이해하는 법을 처음 배웠습니다.</p>
+      </div>
+      <div class="tl reveal">
+        <b>2008 — 2009</b>
+        <h3>HIKO MIZUNO COLLEGE OF JEWELRY (일본) 졸업</h3>
+        <p>Jewelry Design &amp; Product 전공. 귀금속제작기능사 · 주얼리코디네이터 · 컬러코디네이터 자격 취득. 색을 다루는 눈이 여기서 만들어졌습니다.</p>
+      </div>
+      <div class="tl reveal">
+        <b>2025</b>
+        <h3>색채심리와 스포츠 멘탈로</h3>
+        <p>CPA 컬러기질전문상담사, 스포츠심리상담사, 아로마 전문 자격을 취득하며 코칭을 본업으로 삼았습니다.</p>
+      </div>
+      <div class="tl reveal">
+        <b>2026</b>
+        <h3>뇌과학을 더해, 하나의 리포트로</h3>
+        <p>뇌전문가 · 브레인PD · NAHA 과정을 마치고 네 갈래를 통합했습니다. 지금은 NeuroCPA 리포트와 시민강좌로 그 결과를 나눕니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>강의 · 코칭 문의는<br />Threads DM으로 편하게 주세요</h2>
+    <p>기질리포트, 시민강좌, 학부모 교육, 선수 멘탈 코칭 — 무엇이든 먼저 이야기부터 나눠보면 좋겠습니다.</p>
+    <div class="links">
+      <a class="link" href="https://www.threads.com/@chanlinminlove" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21c-5 0-8-3.4-8-9s3-9 8-9c3.6 0 6.1 1.7 7.2 4.6"/><path d="M12.6 10.6c-2 0-3.3.8-3.3 2.2 0 1.3 1.2 2.1 2.7 2 2-.1 3-1.5 3-4.4 0-2.2-1.2-3.5-3.2-3.5-1.3 0-2.3.5-2.9 1.4"/><path d="M12.8 6.9c2.8 0 4.7 1.6 5.5 3.6 1 2.5.4 5.4-1.4 7.2"/></svg>
+        Threads @chanlinminlove
+      </a>
+      <a class="link" href="https://www.instagram.com/chanlinminlove" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+        Instagram @chanlinminlove
+      </a>
+      <a class="link" href="https://section.blog.naver.com/Search/Post.naver?keyword=%EC%95%84%EC%9D%B4%EC%9D%98%20%EB%A7%88%EC%9D%8C%EC%9D%84%20%EC%9D%BD%EB%8A%94%20%EC%97%84%EB%A7%88" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M8 9h8M8 13h5"/></svg>
+        블로그 · 아이의 마음을 읽는 엄마
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>박윤정 · YUNIE coach — 브레인 · 마인드 · 웰니스 통합코치</span>
+    <span>© 2026 YUNIE coach</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    els.forEach(function (el) { el.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(function (el, i) {
+    el.style.transitionDelay = (Math.min(i % 4, 3) * 60) + 'ms';
+    io.observe(el);
+  });
+})();
+</script>
+</body>
+</html>
